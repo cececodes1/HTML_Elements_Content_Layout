@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="post">
+        <h2>Registration</h2>
+        <div class="content">
+            <div class="input-box">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                  aria-label="Full Name"
+                />
+              </div>
+          <div class="input-box">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter your username"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Enter your phone number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <div class="alert">
+          <p>
+            By clicking Register, you agree to our <a href="#">Terms, </a>Privacy
+            Policy and Cookies Policy. You may recieve SMS notifications from us
+            and can opt out at any time.
+          </p>
+        </div>
+        <div class="button-container">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
