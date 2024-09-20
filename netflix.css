@@ -1,0 +1,246 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	/*scroll-behavior: smooth;*/
+}
+
+.LandingPG{
+	position: relative;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	min-height: 100vh;
+	transition: .1s;
+	padding: 100px;
+	background-image: url(Walking\ Dead\ photo.jpg);
+	background-size: cover;
+	background-position: center;
+	animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    20%{
+        background-image: url(la1.jpg);
+    }
+    30%{
+        background-image: url(la2.jpg);
+    }
+    50%{
+        background-image: url(e8.jpg);
+    }
+    70%{
+    background-image: url(e1.jpg);
+    }
+    86%{
+        background-image: url(w8.jpg);
+    }
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 600;
+    margin-left: 29px;
+    font-size: 30px;
+    color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+header .nav{
+    position: relative;
+    display: flex;
+}
+
+header .nav li{
+    list-style: none;
+
+}
+header .nav li a{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 15px 22px;
+    text-transform: none;
+}
+
+header .nav li a:hover{
+    color:red;
+}
+
+header .nav li a span{
+    padding: 10px 18px;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: black;
+
+}
+
+header .nav li a span:hover{
+    background-color: red;
+    color: white;
+    transition: 1s;
+}
+.content{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 22px;
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .text-area h1{
+    text-transform: uppercase;
+    font-size: 47px;
+    margin-bottom: 6px;
+    color: white;
+    width: 60%;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.content .text-area h2{
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: white;
+    min-width: 100px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.content .text-area h3{
+    text-transform: none;
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 18px;
+}
+.content .text-area h4{
+    text-transform: none;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.content .text-area a{
+    display: inline-block;
+    padding: 14px 24px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Button Styling */
+.contact {
+    background-color: #141414; /* dark black background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .contact-left {
+    width: 60%;
+  }
+  
+  .contact-left-title {
+    margin-bottom: 20px;
+  }
+  
+  .contact-left-title h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .contact-left-title hr {
+    border: 1px solid #444;
+    margin: 10px 0;
+  }
+  
+  .contact-inputs {
+    background-color: #333;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-inputs::placeholder {
+    font-family:'Open Sans' sans-serif;
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .contact-inputs:focus {
+    box-shadow: 0 0 0 2px #E50914;
+  }
+  
+  button[type="submit"] {
+    background-color: #E50914; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #FF3737; /* hover effect for the red button */
+  }
+  
+  button[type="submit"]:focus {
+    box-shadow: 0 0 0 2px #E50914; /* focus effect for the red button */
+  }
+  
+  .contact-right {
+    width: 40%;
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Add some space between the form and the right section */
+  .contact-left, .contact-right {
+    margin: 20px;
+  }
